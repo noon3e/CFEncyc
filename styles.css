@@ -1,7 +1,20 @@
-* {
+body {
   background-color: black;
   color: white;
   font-size: 20.8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main-doc {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 #navbar {
@@ -9,14 +22,30 @@
   top: 0;
   border: 4.3px solid #a7c7e7;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  z-index: 1000;
 }
 
 #navbar header {
   font-size: 48.4px;
   font-weight: bold;
   color: #9fe2bf;
+  margin-bottom: 0.5rem;
 }
-#navbar a {
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  margin: 0;
+}
+
+#navbar a,
+.nav-link {
   text-decoration: none;
   display: flex;
   margin-bottom: 13px;
@@ -24,9 +53,10 @@
   color: #ccccff;
 }
 
-@media (max-height: 10px) {
-  .main-doc {
-    font-size: 0.7em;
+@media (max-width: 600px) {
+  #main-doc {
+    font-size: 0.9em;
+    padding: 0 1rem;
   }
 }
 
@@ -34,13 +64,14 @@
   width: 100%;
   height: 66%;
   padding-top: 13.33px;
-  }
+}
 
+/* Section headers */
 .header-cf,
 .header-HFI,
 .header-Y-N,
 .header-onyx,
-.header-amazon-rec {
+.header-Amazon-Rec {
   text-align: center;
   padding-top: 33.3px;
   padding-bottom: 33.3px;
@@ -48,7 +79,7 @@
   font-size: 44.4px;
   color: #ccccff;
   border-bottom: 4px solid lightblue;
-  }
+}
 
 .HFI-P2 {
   font-weight: bold;
@@ -61,16 +92,18 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 44.4px;
+  padding-left: 1.5rem;
 }
 
 .yes-and-no-list {
   text-align: left;
-  margin-right: 533.3px;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
-  align-items: left;
   flex-direction: column;
   gap: 33.4px;
   padding-top: 63.3px;
+  padding-left: 1.5rem;
 }
 
 .YES-P1 {
@@ -78,6 +111,7 @@
 }
 
 .yes,
+.NO-P2,
 .no-P2 {
   text-align: center;
   font-weight: bold;
@@ -91,9 +125,11 @@
   padding-bottom: 63.3px;
 }
 
-.no-p2 {
+.NO-P2,
+.no-P2 {
   padding-top: 33.3px;
 }
+
 
 .A-REC-P3,
 .A-REC-P4,
@@ -108,6 +144,7 @@
 .A-REC-P21,
 .A-REC-P22,
 .BL-TOY,
+.BL-Toy,
 .A-REC-P23,
 .A-REC-P24,
 .A-REC-P25,
@@ -116,6 +153,7 @@
 .A-REC-P28,
 .A-REC-P29,
 .A-REC-P16,
+.A-REC-P17,
 .A-RECP17,
 .A-RECP18,
 .rolling-ball,
@@ -144,7 +182,7 @@
 .auto-feed2,
 .treats-2,
 .toys-2,
-.auto-fountain3,
+.Auto-Fountain3,
 .auto-feed3,
 .treats-3,
 .toys-3 {
@@ -160,7 +198,6 @@
   text-align: center;
   font-weight: bold;
   margin: auto;
-  padding: auto;
   font-size: 26.8px;
 }
 
@@ -196,4 +233,9 @@ img {
 
 .adopt-adv {
   margin: 13px;
+}
+
+
+.main-section p {
+  margin-bottom: 1rem;
 }
