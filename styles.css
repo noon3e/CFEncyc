@@ -42,30 +42,3 @@ body {
 
 #navbar li {
   margin: 0;
-}
-
-#navbar a,
-.nav-link {
-  text-decoration: none;
-  display: flex;
-  margin-bottom: 13px;
-  font-size: 18.8px;
-  color: #ccccff;
-}
-
-@media (max-width: 600px) {
-  #main-doc {
-    font-size: 0.9em;
-    padding: 0 1rem;
-  }
-}
-
-#video {
-  width: 100%;
-  height: 66%;
-  padding-top: 13.33px;
-}
-
-/* Section headers */
-.header-cf,
-.hea
