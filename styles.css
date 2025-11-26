@@ -44,12 +44,17 @@ body {
   margin: 0;
 }
 
-#navbar a,
-.nav-link {
-  text-decoration: none;
+#navbar a {
+  text-decoration: none !important;
   display: flex;
   margin-bottom: 13px;
   font-size: 18.8px;
+  font-weight: normal;
+  color: #ccccff;
+}
+
+.nav-link {
+  text-decoration: none;
   color: #ccccff;
 }
 
